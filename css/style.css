@@ -1,18 +1,6 @@
+/*Default style guide*/
 body {
-	margin: 0;
-	padding: 0;
 	font-size: 14px;
-	font-family: sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	padding: 0;
-	margin: 0;
 }
 
 h1,
@@ -32,41 +20,96 @@ h6 {
 	text-decoration: underline;
 }
 
+p {
+	color: #416F40;
+}
+
 button {
 	min-height: 30px;
 	padding: 10px 15px;
-	cursor: pointer;
+	border: 1px solid #e5e5e5;
 }
 
-.position-transition {
-	background-image: url('../assets/images/button_bg.png');
-	border: 1px solid #a0a0a0;
-	background-color: #FC7272;
-	background-position: left top;
-	color: #0a0a0a;
-}
-
-	.position-transition:hover {
-		background-position: right bottom;
-		background-color: #E06262;
-		-webkit-transition: background 1s;
-		transition: background 1s;
-	}
-
-.body-container {
+/*Style for main container*/
+.main-container {
 	margin: 10px auto;
 	padding: 0;
 	text-align: center;
 	min-height: calc(100vh - 50px);
-	width: 95%;
+	width: 98%;
 	border: 1px solid #d0d0d0;
 	box-shadow: 0px 0px 8px #c5c5c5;	
 }
 
+/*Style for header*/
 .heading-container {
 	border-bottom: 1px solid #dfdfdf;
-	padding: 5px 0 10px;
+	padding: .67em 0 0;
 	width: 100%;
-	background: #fafafa; 
+	background: #F2F5FF; 
 }
 
+.heading-content-container {
+	min-width: 30%;
+	width: 100px;
+	border: 1px solid #7882A4;
+	text-align: left;
+	margin: 0 auto 10px;
+	padding: 0 15px;
+}
+
+.heading-content-container p {
+	padding-left: 20px; 
+	margin: 15px 0 0;
+}
+
+.heading-content-container ul {
+	color: #495786;
+	font-size: 90%;
+}
+
+/*Style for body*/
+.body-container p {	
+	margin: 0 auto;
+	padding: 10px 15px;
+	min-width: 30%;
+	width: 100px;
+}
+
+.body-content-container {
+	margin: 10px 0;
+	padding: 0 0 10px;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	background: #F6EFFA; 
+}
+
+/*Style to explain border-radius*/
+.example-border-radius {
+	border-radius: 10px;
+	border: 1px solid #89594C;
+}
+
+/*Style to explain box-shadow effect*/
+.example-box-shadow {
+	box-shadow: 1px 1px 10px 1px #8F799C;
+}
+
+/*Style to explain border-image*/
+.example-border-image {
+	border-image: url('../assets/images/green-bubble.jpg') 20 20 repeat;
+}
+
+/*Style to explain transition effect*/
+.position-transition {
+	background-color: #FC7272;
+	color: #123A11;
+	background-position: left top;
+	background-image: url('../assets/images/button_bg.png');
+}
+
+.position-transition:hover {
+	background-position: right bottom;
+	-webkit-transition: background 1s;
+	transition: background 1s;
+}
