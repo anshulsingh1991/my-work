@@ -51,7 +51,7 @@ function showDropSpace(ev) {
 			divs[i].outerHTML = "";
 		}
 		targetPanel = targetPanel.lastElementChild;
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 2px inset blueviolet;margin: 0 auto 10px;box-shadow: 0px 0px 10px blue;'>&nbsp;</div>";
+		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
 		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
 		targetPanel.outerHTML += outerHTML;
 	}
@@ -60,7 +60,7 @@ function showDropSpace(ev) {
 		for (var i = divs.length - 1; i >= 0; i--) {
 			divs[i].outerHTML = "";
 		}
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 2px inset blueviolet;margin: 0 auto 10px;box-shadow: 0px 0px 10px blue;'>&nbsp;</div>";
+		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
 		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
 	}
 }
