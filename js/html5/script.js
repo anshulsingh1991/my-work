@@ -51,8 +51,7 @@ function showDropSpace(ev) {
 			divs[i].outerHTML = "";
 		}
 		targetPanel = targetPanel.lastElementChild;
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
-		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
+		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)'>&nbsp;</div>";
 		targetPanel.outerHTML += outerHTML;
 	}
 	if(targetPanel.nodeName == "SECTION") {
@@ -60,7 +59,7 @@ function showDropSpace(ev) {
 		for (var i = divs.length - 1; i >= 0; i--) {
 			divs[i].outerHTML = "";
 		}
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
+		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)'>&nbsp;</div>";
 		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
 	}
 }

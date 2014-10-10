@@ -213,3 +213,11 @@ output {
 	width: 48%;
 	display: table-cell;
 }
+
+.temp-div {
+	background: #eee;
+	height: 60px;
+	width: 99%;
+	border: 1px dashed #999;
+	margin: 0 auto 10px;
+}
