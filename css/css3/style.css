@@ -1,58 +1,13 @@
-/*Default style guide*/
-body {
-	font-size: 14px;
-}
-
-h1,
-h2 {
-	color: #333;
-	text-transform: uppercase;
-	text-shadow: 3px 3px 0px #aaa;
-}
-
-h3,
-h4,
-h5,
-h6 {
-	color: #555;
-	text-transform: capitalize;
-	text-shadow: 3px 2px 2px #c5c5c5;
-	text-decoration: underline;
-}
-
-p {
-	color: #416F40;
-}
-
-img {
-	margin: 5px 0;
-}
-
+/*Style to align logo*/
 header {
-	width: 97%;
-	padding: 10px;
-	margin: 0 auto 10px;
-	text-align: center;
-	background: url('../../assets/images/css3_logo.png') no-repeat 53% 60%;
+	background: url('../../assets/images/css3_logo.png') no-repeat 53.5% 32%;
 }
 
-header h1 {
-	display: inline;
-	vertical-align: top;
-}
-
-button {
-	min-height: 30px;
-	padding: 10px 15px;
-	border: 1px solid #e5e5e5;
-}
-
-/*Style for main container*/
-.main-container {
+/*Style for body*/
+#body-css3 {
 	margin: 10px auto;
 	padding: 0;
 	text-align: center;
-	min-height: calc(100vh - 50px);
 	width: 98%;
 	border: 1px solid #d0d0d0;
 	box-shadow: 0px 0px 8px #c5c5c5;	
@@ -99,6 +54,26 @@ button {
 	border-top: 1px solid #e0e0e0;
 	border-bottom: 1px solid #e0e0e0;
 	background: #F6EFFA; 
+}
+
+/*Style for example container*/
+.example-container h3 {
+	padding: 5px 0px 5px 15px;
+	margin: 0 -10px 15px;
+	background-image: linear-gradient(to bottom, #c5c5c5 0%, #797979 100%);
+	color: #040404;
+	text-shadow: none;
+	cursor: move;
+	text-decoration: none;
+}
+
+.example-container h6 {
+	margin: 15px 0 5px;
+}
+
+/*Style for drag drop feature*/
+#section-holder {
+	display: table-cell;
 }
 
 /*Style to explain border-radius*/
