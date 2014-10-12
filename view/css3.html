@@ -1,46 +1,59 @@
 <html>
   <head>
     <title>UI/UX - CSS3</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/css3/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/css3/style.css">
   </head>
-  <body>
-  	<div class="main-container">
-	  	<div class="heading-container">	
-	  		<header>	
+  	<body id="body-css3">
+  		<header>	
 		    	<h1>css</h1>
-	  		</header>
-	    	<p>It is the latest standard for <b>CSS</b>. Has been split into <b><i>modules</i></b>. Contains the <i>old CSS specification</i> & in addition, <i>new modules</i> are added.</p>
-	    	<div class="heading-content-container">
-	    		<p>Some of the most important CSS3 modules are:</p>
-		    	<ul>
-		    		<li>Selectors</li>
-		    		<li>Box Model</li>
-		    		<li>Backgrounds and Borders</li>
-		    		<li>Image Values and Replaced Content</li>
-		    		<li>Text Effects</li>
-		    		<li>2D/3D Transformations</li>
-		    		<li>Animations</li>
-		    		<li>Multiple Column Layout</li>
-		    		<li>User Interface</li>
-		    	</ul>
-	    	</div>
-	  	</div>
-	  	<div class="body-container">	 
-		  	<div id="borders-css" class="body-content-container">	 
-			    <h3>1. borders</h3>
-			    <h6>(a) border-radius</h6>
-			    <p class="example-border-radius">Used to create rounded corners.</p>
-			    <h6>(b) box-shadow</h6>
-			    <p class="example-box-shadow">Used to add shadow to boxes.</p>
-			    <h6>(c) border-image</h6>
-			    <p class="example-border-image">Used to put image as a border.</p>
-		    </div>
-		  	<div class="body-content-container">	 
-			    <h3>position transition</h3>
-			    <button class="position-transition">Hover it!!</button>
-			</div>
-		</div>
-    </div>
-  </body>
+		    	<p>It is the latest standard for <b>CSS</b>. 
+	  	</header>
+		<nav>
+		</nav>
+	  	<article class="body-container">
+			<aside>
+				<h5>Page Content: </h5>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="#">link</a>
+				<a href="html5.html" class="link-to-other-page" target="_blank">go to html5</a>
+				<a href="../README.md" id="read-more" target="_blank">read more..</a>
+			</aside>
+		  	<main ondragover="allowDrop(event)">
+		  		<div id="section-holder" ondrop="drop(event)" ondragover="showDropPanel(event)">
+				  	<section id="borders-css" class="example-container">
+					    <h3 draggable="true" ondragstart="drag(event)">borders</h3>
+					    <h6>(a) border-radius</h6>
+					    <p class="example-border-radius">Used to create rounded corners.</p>
+					    <h6>(b) box-shadow</h6>
+					    <p class="example-box-shadow">Used to add shadow to boxes.</p>
+					    <h6>(c) border-image</h6>
+					    <p class="example-border-image">Used to put image as a border.</p>
+				    </section>
+				  	<section id="transitions-css" class="example-container">
+					    <h3 draggable="true" ondragstart="drag(event)">position transition</h3>
+					    <button class="position-transition">Hover it!!</button>
+					</section>
+				</div>
+			</main>
+		</article>
+	    <footer>
+				<p>Footer section</p>
+		</footer>
+		<footer>
+				<p>Copyright &copy; 2014 css3.mysite.com</p>
+		</footer>
+  	</body>
 </html>
+<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../js/css3/script.js"></script>
