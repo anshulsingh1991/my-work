@@ -40,27 +40,25 @@ function click() {
 function allowDrop(ev) {
 	ev.preventDefault();
 }
-function showDropSpace(ev) {
+function showDropPanel(ev) {
 	ev.preventDefault();
 	var data = ev.dataTransfer.getData("Text");
-	var parentNode = ev.dataTransfer.getData("ParentNode");
 	var targetPanel = ev.target;
 	if(targetPanel.nodeName == "DIV") {
-		var divs = document.getElementsByClassName("temp-div");
+		var divs = document.getElementsByClassName("div-holder-panel");
 		for (var i = divs.length - 1; i >= 0; i--) {
 			divs[i].outerHTML = "";
 		}
-		targetPanel = targetPanel.lastElementChild;
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
-		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
-		targetPanel.outerHTML += outerHTML;
+		var lastElementChild = targetPanel.lastElementChild;
+		var outerHTML = "<div class='div-holder-panel' ondrop='dropHere(event)'>&nbsp;</div>";
+		lastElementChild.outerHTML += outerHTML;
 	}
 	if(targetPanel.nodeName == "SECTION") {
-		var divs = document.getElementsByClassName("temp-div");
+		var divs = document.getElementsByClassName("div-holder-panel");
 		for (var i = divs.length - 1; i >= 0; i--) {
 			divs[i].outerHTML = "";
 		}
-		var outerHTML = "<div class='temp-div' ondrop='dropHere(event)' style='background: #eee;height: 60px;width: 99%;border: 1px dashed #999;margin: 0 auto 10px;'>&nbsp;</div>";
+		var outerHTML = "<div class='div-holder-panel' ondrop='dropHere(event)'>&nbsp;</div>";
 		targetPanel.outerHTML = outerHTML + targetPanel.outerHTML;
 	}
 }
@@ -70,7 +68,7 @@ function drag(ev) {
 }
 function drop(ev) {
 	ev.preventDefault();
-	var divs = document.getElementsByClassName("temp-div");
+	var divs = document.getElementsByClassName("div-holder-panel");
 	for (var i = divs.length - 1; i >= 0; i--) {
 		divs[i].outerHTML = "";
 	}
@@ -124,7 +122,7 @@ function drop(ev) {
 	}
 }
 function dropHere(ev) {
-	var divs = document.getElementsByClassName("temp-div");
+	var divs = document.getElementsByClassName("div-holder-panel");
 	var parentNode = ev.dataTransfer.getData("ParentNode");
 	var data = ev.dataTransfer.getData("Text");
 	var outerHTML = document.getElementById(data).outerHTML;
