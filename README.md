@@ -340,9 +340,9 @@ Here's I have described what I know about CSS 3.
 What is CSS 3
 ===============
 
-It is the latest standard for CSS. Has been split into "modules". Contains the "old CSS specification" & in addition, new modules are added.
+The development of style sheet was to make the markup language more impressive. It was discovered around 1980s in the beginning of the SGML. The third level of CSS was started to develop around 1998. The first working draft of CSS3 was came in 19-01-2001. And since the first introduction still it is under construction. There were some certain shortcomings in CSS2 and due to its unlikeness the developer introduced CSS3. Though the first working draft of CSS3 came on 19-01-2001, but it was initially declared early in the June 1999. It is the latest standard for CSS. Has been split into "modules". Contains the "old CSS specification" & in addition, new modules are added.
 
-Most important CSS3 modules:
+Some of the most important CSS3 modules:
 ---------------------------------------
 Selectors
 Box Model
